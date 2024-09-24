@@ -10,6 +10,7 @@ input_file = "NVIDIA/Sample_Prompts_100.csv"
 
 def getNVIDIAModelAccess():
   client = ChatNVIDIA(
+    base_url="http://localhost:8000/v1",
     model="meta/llama-3.1-8b-instruct",
     api_key="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", 
     temperature=0.2,
